@@ -3,8 +3,8 @@ package com.artaxer
 import java.util.PriorityQueue
 
 class OrderBook {
-    private val buyOrders = PriorityQueue<Order>(compareByDescending { it.price })
-    private val sellOrders = PriorityQueue<Order>(compareBy { it.price })
+    private val buyOrders = PriorityQueue(compareByDescending<Order> { it.price }.thenBy { it.timestamp })
+    private val sellOrders = PriorityQueue(compareBy<Order> { it.price }.thenBy { it.timestamp })
 
     fun addOrder(order: Order) {
         when (order.type) {

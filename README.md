@@ -2,7 +2,7 @@
 
 ## Overview
 A simple trade orders matching engine for a crypto exchange implemented in Kotlin using coroutines and channels.
-This sample supports limit buy and sell orders and matches them concurrently.
+This sample supports limit buy and sell orders and matches them concurrently using the Price/Time algorithm (or First-in-First-out).
 
 ## Usage
 
