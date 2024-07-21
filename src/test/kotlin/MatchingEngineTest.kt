@@ -14,7 +14,6 @@ class MatchingEngineTest {
     @BeforeTest
     fun setup() {
         engine = MatchingEngine()
-        engine.start()
     }
 
     @AfterTest
